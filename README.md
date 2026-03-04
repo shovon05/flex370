@@ -1,115 +1,61 @@
-# CSE370 Lab Project Ideas
+# flex370
 
-This repository contains proposed project ideas for the **CSE370 Database Lab Project**.  
-Each team member contributes one idea, and the final project will be selected after instructor approval.
+Repository for **CSE370 – Database Lab Project Ideas and Design Materials**.
+
+This repository documents the proposed project ideas for the CSE370 Database Lab. It will also store future project artifacts such as:
+
+- Feature lists
+- ER/EER diagrams
+- Database schema designs
+- Implementation code
+- Final project documentation
+
+Each team member contributes a project idea. One idea will be selected for the final project after instructor approval.
 
 ---
 
-# Idea 1 — MentorGraph
-*A Smart Academic Consultation and Mentorship Management Platform*
+# Proposed Project Ideas
+
+---
+
+# Idea 1 — MentorGraph  
+### Academic Consultation & Mentorship Management System
 
 ## Overview
-MentorGraph is a database-driven platform designed to simplify and optimize academic consultation between **students, student tutors (ST), and faculty members**. The system enables students to easily identify the most suitable tutor or instructor for a particular topic and schedule consultation sessions based on real-time availability.
+MentorGraph is a database-driven platform designed to simplify academic consultations between **students, student tutors (ST), and faculty members**.
 
-The platform also integrates a **review and reputation mechanism**, allowing students to learn from the experiences of previous consultations. By combining scheduling, expertise mapping, and feedback systems, MentorGraph helps students find effective academic guidance more efficiently.
+The system allows students to discover mentors based on **topic expertise, availability, and previous consultation feedback**, and schedule consultation sessions through a structured booking interface.
 
----
-
-## System Components
-
-### Administrative Functions
-The administrative module manages the operational aspects of the consultation platform.
-
-- **User Management**  
-  Manage accounts of students, student tutors, and faculty members.
-
-- **Subject and Topic Management**  
-  Add, edit, or remove subjects and topics available for consultation.
-
-- **Session Monitoring**  
-  Track scheduled consultation sessions and system activities.
-
-- **Review Moderation**  
-  Monitor and manage feedback provided by students.
-
-- **Platform Configuration**  
-  Configure system settings such as consultation limits or scheduling rules.
+By combining consultation scheduling, expertise mapping, and reputation tracking, MentorGraph helps students efficiently find the most suitable academic support.
 
 ---
 
-### User Account Features
-Students can create accounts and use the system to book consultations and monitor their academic support activities.
+## Key Features
 
-- **User Registration (Sign Up)**  
-  Create a new student account in the system.
+**Smart Mentor Discovery**  
+Students can search for tutors or faculty members based on specific subjects or topics.
 
-- **User Login**  
-  Secure authentication to access the platform.
+**Availability-Based Consultation Booking**  
+Students can view mentor availability and schedule consultation sessions without conflicts.
 
-- **Profile Management**  
-  Update personal information and academic preferences.
+**Topic Expertise Mapping**  
+Tutors and faculty members can define subjects and topics they specialize in.
 
-- **Consultation Booking Interface**  
-  Book consultation sessions with available tutors or faculty members.
+**Reputation & Review System**  
+Students can provide ratings and feedback after consultation sessions.
 
-- **Consultation History**  
-  View past consultation sessions and related feedback.
+**Tutor / Faculty Availability Management**  
+Mentors can manage their consultation schedules and available time slots.
 
-- **Mentor Discovery**  
-  Identify tutors and instructors based on topic expertise and previous student reviews.
+**Consultation History Tracking**  
+Students can review past consultation sessions and feedback.
 
----
-
-### Consultation Management System
-This component manages the scheduling and organization of consultation sessions.
-
-- **Consultation Request**  
-  Students submit requests for consultation sessions.
-
-- **Topic Selection**  
-  Students specify the subject or topic they require assistance with.
-
-- **Availability-Based Scheduling**  
-  The system displays tutors and faculty members who are available at specific times.
-
-- **Notification System**  
-  Tutors and faculty members receive notifications when consultation requests are booked.
-
-- **Session Tracking**  
-  Students can track the status of their consultation requests.
+**Student Performance Feedback**  
+Tutors or faculty members may optionally provide feedback about student understanding.
 
 ---
 
-### Tutor and Faculty Features
-Tutors and faculty members can manage their consultation schedules and provide feedback.
-
-- **Availability Management**  
-  Tutors and faculty members set their available consultation time slots.
-
-- **Session Acceptance**  
-  Accept or manage consultation bookings.
-
-- **Student Evaluation**  
-  Tutors or faculty members may optionally provide feedback regarding students’ understanding of specific topics.
-
----
-
-### Reputation and Review System
-The system collects feedback from previous consultations to help future students make better decisions.
-
-- **Student Reviews**  
-  Students can rate their consultation experience.
-
-- **Topic Expertise Ranking**  
-  Tutors and faculty members gain reputation scores based on topic-specific feedback.
-
-- **Consultation Insights**  
-  Identify which tutors or instructors are most effective for particular subjects.
-
----
-
-## Potential Database Entities
-The database schema may include entities such as:
+## Possible Database Entities
 
 - Students  
 - Student Tutors  
@@ -125,108 +71,39 @@ The database schema may include entities such as:
 
 ---
 
-## Significance of the Project
-MentorGraph aims to improve academic support systems by combining **consultation scheduling, expertise discovery, and reputation tracking** within a unified platform. The system enables students to efficiently find appropriate mentors while providing instructors and tutors with structured consultation management tools.
-
----
-
-# Idea 2 — ReCycleHub
-*A Smart Waste Recycling and Reuse Management Platform*
+# Idea 2 — ReCycleHub  
+### Waste Recycling & Reuse Management Platform
 
 ## Overview
-ReCycleHub is a database-driven platform designed to facilitate the collection, recycling, and reuse of **electrical and plastic waste**. The system connects users, administrators, and recycling workers through a structured platform where waste can be scheduled for pickup, processed for recycling, and transformed into reusable products.
+ReCycleHub is a database-driven platform designed to manage the collection, recycling, and reuse of **electrical and plastic waste**.
 
-The platform encourages sustainable waste management by allowing users to responsibly dispose of recyclable materials while earning rewards for their contributions. At the same time, the system enables the refurbishment and resale of reusable products, promoting a circular economy.
-
----
-
-## System Components
-
-### Administrative Functions
-The administrative module manages the operational aspects of the recycling system.
-
-- **Request Approval**  
-  Review and approve waste pickup requests submitted by users.
-
-- **Product Management**  
-  Add, edit, or remove recycled or refurbished products from the system.
-
-- **Price Management**  
-  Set prices for collected waste materials and recycled products.
-
-- **User Account Management**  
-  Monitor and manage user accounts within the system.
-
-- **User Support**  
-  Provide assistance to users through an integrated messaging or chat system.
+The system allows users to request waste pickup, track recycling processes, and earn rewards for contributing recyclable materials. The platform also supports selling **refurbished electronic products and recycled plastic products**, encouraging sustainable resource usage.
 
 ---
 
-### User Account Features
-Users can create accounts to participate in the recycling system and track their activities.
+## Key Features
 
-- **User Registration (Sign Up)**  
-  Create a new user account in the platform.
+**Waste Pickup Request System**  
+Users can submit waste pickup requests with waste details and images.
 
-- **User Login**  
-  Secure authentication to access the system.
+**Administrative Approval Workflow**  
+Administrators review and approve recycling requests.
 
-- **Profile Management**  
-  Update personal information and account details.
+**Worker Assignment & Pickup Scheduling**  
+Workers are assigned to approved requests and given pickup schedules.
 
-- **Pickup History**  
-  View past waste collection requests and their status.
+**Recycling Request Tracking**  
+Users can track the progress of their recycling requests.
 
-- **Order History**  
-  Track purchases of recycled or refurbished products.
+**Reward Points System**  
+Users earn reward points when selling recyclable waste.
 
-- **Reward Points System**  
-  Users earn points when they sell recyclable waste through the platform.
-
----
-
-### Waste Recycling System
-This component enables users to submit waste collection requests and track the recycling process.
-
-- **Waste Pickup Request**  
-  Users submit a request for waste collection.
-
-- **Waste Details Submission**  
-  Provide information about the waste, including:
-  - Waste type
-  - Description
-  - Photo upload
-
-- **Pickup Location Selection**  
-  Users specify the pickup location.
-
-- **Administrative Approval**  
-  The administrator reviews and approves pickup requests.
-
-- **Worker Assignment**  
-  A recycling worker is assigned to collect the waste.
-
-- **Pickup Scheduling**  
-  A time slot is scheduled for the waste collection.
-
-- **Request Tracking**  
-  Users can track the status of their recycling requests.
+**Reuse Product Marketplace**  
+The platform supports selling refurbished electronic products and recycled plastic products.
 
 ---
 
-### Reuse Product Marketplace
-The system supports the reuse and resale of recycled products.
-
-- **Refurbished Electrical Products**  
-  Sale of repaired or refurbished electronic devices.
-
-- **Recycled Plastic Products**  
-  Sale of products manufactured from recycled plastic materials.
-
----
-
-## Potential Database Entities
-The database design may include entities such as:
+## Possible Database Entities
 
 - Users  
 - Administrators  
@@ -241,16 +118,61 @@ The database design may include entities such as:
 
 ---
 
-## Significance of the Project
-ReCycleHub promotes **sustainable waste management** by providing a structured digital platform for waste collection, recycling, and product reuse. By integrating waste pickup scheduling, recycling workflows, and a marketplace for refurbished products, the system supports environmentally responsible consumption while creating value from discarded materials.
+# Idea 3 — SeismoSafe  
+### Earthquake Vulnerable Building Detection & Area-Based Risk Analysis System for Bangladesh
+
+## Overview
+SeismoSafe is a database-driven system designed to detect earthquake-vulnerable buildings and perform **area-based structural risk analysis across Bangladesh**.
+
+The platform collects building information, structural inspection reports, and geographic data to evaluate the **earthquake vulnerability of buildings and surrounding areas**. Using a risk scoring algorithm, the system categorizes buildings based on structural safety levels and helps authorities prioritize safety inspections and emergency preparedness planning.
 
 ---
 
-# Idea 3 — To Be Added
-(Teammate project idea)
+## Key Features
+
+**Multi-Level Role-Based Login System**  
+Separate dashboards for Admin, Structural Engineers, Inspectors, Citizens, and Emergency Responders with role-based access control.
+
+**Structural Weakness Scoring Algorithm**  
+The system calculates a **Building Risk Score** based on construction year, number of floors, building materials, soil type, BNBC compliance, and distance from seismic zones. Buildings are categorized as Safe, Moderate Risk, or High Risk.
+
+**Seismic Zone Classification Integration**  
+The database stores Bangladesh’s earthquake zone classifications and applies risk multipliers based on each building’s location.
+
+**Risk Heatmap & Area Filtering**  
+An interactive map displays weak buildings using color-coded indicators. Users can filter results by city, area, ward, or risk score range.
+
+**Old vs Updated Building Code Comparison**  
+Buildings constructed before major BNBC updates receive higher vulnerability weighting.
+
+**Inspection History & Structural Image Upload**  
+Inspectors can upload structural inspection images such as cracks, column damage, or foundation issues. Multiple inspection records can be stored per building.
+
+**Illegal Floor & Structural Modification Detection**  
+The system compares approved building plans with actual floor counts. Unauthorized extensions automatically increase the building risk score.
+
+**Smart Priority Ranking & Emergency Preparedness Score**  
+The system ranks the most dangerous buildings based on calculated risk scores and evaluates emergency readiness based on fire exits, emergency stairs, and open assembly areas. It also indicates how suitable an area is for safe living.
 
 ---
 
-## Repository Status
-This repository is currently under development.  
-Project documentation, database design diagrams, and implementation details will be added progressively.
+## Possible Database Entities
+
+- Buildings  
+- Building Owners  
+- Structural Engineers  
+- Inspectors  
+- Seismic Zones  
+- Inspection Reports  
+- Structural Images  
+- Risk Scores  
+- Emergency Facilities  
+- Building Plans  
+- Unauthorized Modifications  
+
+---
+
+# Repository Status
+
+This repository is currently **under development**.  
+Project documentation, ER/EER diagrams, database schema designs, and implementation files will be added progressively as the project progresses.
