@@ -1,19 +1,4 @@
 # flex370
-
-Repository for **CSE370 – Database Lab Project Ideas and Design Materials**.
-
-This repository documents the proposed project ideas for the CSE370 Database Lab. It will also store future project artifacts such as:
-
-- Feature lists
-- ER/EER diagrams
-- Database schema designs
-- Implementation code
-- Final project documentation
-
-Each team member contributes a project idea. One idea will be selected for the final project after instructor approval.
-
----
-
 # Proposed Project Ideas
 
 ---
