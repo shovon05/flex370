@@ -1,6 +1,3 @@
-# flex370
-CSE370 database project in progress. Structure, features, and documentation will be added soon.
-
 # CSE370 Lab Project Ideas
 
 This repository contains proposed project ideas for the **CSE370 Database Lab Project**.  
@@ -8,80 +5,6 @@ Each team member contributes one idea, and the final project will be selected af
 
 ---
 
-# Idea 1 — MentorGraph
-*A Data-Driven Academic Consultation and Mentorship Platform*
-
-## Overview
-MentorGraph is a database-driven platform designed to simplify and improve the process of academic consultation between **students, student tutors (ST), and faculty members**.
-
-The system allows students to easily discover the most suitable tutor or faculty member for a specific topic, view their availability, and schedule consultation sessions through a structured booking interface.
-
-In addition to scheduling, the platform incorporates **data-driven insights from previous consultations**, allowing students to identify mentors who have demonstrated strong effectiveness in teaching particular subjects or topics.
-
----
-
-## Problem Statement
-Students frequently face difficulties when trying to:
-
-- Identify which instructor or student tutor is best suited for a specific topic
-- Determine when tutors or faculty members are available
-- Efficiently schedule consultation sessions
-- Learn from the experiences and feedback of previous students
-
-MentorGraph addresses these challenges by integrating **availability tracking, consultation booking, and mentor expertise mapping** into a unified database system.
-
----
-
-## Key Features
-
-### Intelligent Consultation Booking
-Students can schedule consultation sessions with tutors or faculty members based on **real-time availability and schedule synchronization**.
-
-### Topic-Based Expertise Mapping
-Each tutor and faculty member is associated with specific **subjects and topics**, enabling students to quickly find mentors with relevant expertise.
-
-### Reputation and Review System
-Students can provide feedback following consultation sessions. These reviews contribute to **topic-specific reputation scores**, helping future students identify effective mentors.
-
-### Availability-Aware Scheduling
-The system dynamically displays available time slots, ensuring that students can easily identify mentors who are currently available and preventing scheduling conflicts.
-
-### Consultation Analytics
-The system maintains historical consultation data, enabling insights such as:
-
-- Most frequently consulted tutors
-- Topics that require the most support
-- Faculty consultation activity
-
-### Student Academic Feedback
-Tutors and faculty members may optionally record feedback regarding students’ conceptual understanding and engagement during consultations.
-
----
-
-## Potential Database Entities
-The database schema may include entities such as:
-
-- Students  
-- Student Tutors  
-- Faculty Members  
-- Subjects  
-- Topics  
-- Consultation Sessions  
-- Availability Slots  
-- Reviews  
-- Ratings  
-- Academic Feedback  
-
----
-
-## Significance of the Project
-MentorGraph extends beyond a basic appointment scheduling system by incorporating **reputation tracking, expertise mapping, and academic analytics**.  
-
-By combining these components into a single platform, the system enables **data-driven mentorship discovery**, helping students efficiently connect with the most suitable academic support resources.
-
----
-
-# Idea 2 — To Be Added
 # Idea 1 — MentorGraph
 *A Smart Academic Consultation and Mentorship Management Platform*
 
@@ -204,6 +127,122 @@ The database schema may include entities such as:
 
 ## Significance of the Project
 MentorGraph aims to improve academic support systems by combining **consultation scheduling, expertise discovery, and reputation tracking** within a unified platform. The system enables students to efficiently find appropriate mentors while providing instructors and tutors with structured consultation management tools.
+
+---
+
+# Idea 2 — ReCycleHub
+*A Smart Waste Recycling and Reuse Management Platform*
+
+## Overview
+ReCycleHub is a database-driven platform designed to facilitate the collection, recycling, and reuse of **electrical and plastic waste**. The system connects users, administrators, and recycling workers through a structured platform where waste can be scheduled for pickup, processed for recycling, and transformed into reusable products.
+
+The platform encourages sustainable waste management by allowing users to responsibly dispose of recyclable materials while earning rewards for their contributions. At the same time, the system enables the refurbishment and resale of reusable products, promoting a circular economy.
+
+---
+
+## System Components
+
+### Administrative Functions
+The administrative module manages the operational aspects of the recycling system.
+
+- **Request Approval**  
+  Review and approve waste pickup requests submitted by users.
+
+- **Product Management**  
+  Add, edit, or remove recycled or refurbished products from the system.
+
+- **Price Management**  
+  Set prices for collected waste materials and recycled products.
+
+- **User Account Management**  
+  Monitor and manage user accounts within the system.
+
+- **User Support**  
+  Provide assistance to users through an integrated messaging or chat system.
+
+---
+
+### User Account Features
+Users can create accounts to participate in the recycling system and track their activities.
+
+- **User Registration (Sign Up)**  
+  Create a new user account in the platform.
+
+- **User Login**  
+  Secure authentication to access the system.
+
+- **Profile Management**  
+  Update personal information and account details.
+
+- **Pickup History**  
+  View past waste collection requests and their status.
+
+- **Order History**  
+  Track purchases of recycled or refurbished products.
+
+- **Reward Points System**  
+  Users earn points when they sell recyclable waste through the platform.
+
+---
+
+### Waste Recycling System
+This component enables users to submit waste collection requests and track the recycling process.
+
+- **Waste Pickup Request**  
+  Users submit a request for waste collection.
+
+- **Waste Details Submission**  
+  Provide information about the waste, including:
+  - Waste type
+  - Description
+  - Photo upload
+
+- **Pickup Location Selection**  
+  Users specify the pickup location.
+
+- **Administrative Approval**  
+  The administrator reviews and approves pickup requests.
+
+- **Worker Assignment**  
+  A recycling worker is assigned to collect the waste.
+
+- **Pickup Scheduling**  
+  A time slot is scheduled for the waste collection.
+
+- **Request Tracking**  
+  Users can track the status of their recycling requests.
+
+---
+
+### Reuse Product Marketplace
+The system supports the reuse and resale of recycled products.
+
+- **Refurbished Electrical Products**  
+  Sale of repaired or refurbished electronic devices.
+
+- **Recycled Plastic Products**  
+  Sale of products manufactured from recycled plastic materials.
+
+---
+
+## Potential Database Entities
+The database design may include entities such as:
+
+- Users  
+- Administrators  
+- Workers  
+- Waste Requests  
+- Pickup Locations  
+- Waste Items  
+- Recycled Products  
+- Orders  
+- Reward Points  
+- Support Messages  
+
+---
+
+## Significance of the Project
+ReCycleHub promotes **sustainable waste management** by providing a structured digital platform for waste collection, recycling, and product reuse. By integrating waste pickup scheduling, recycling workflows, and a marketplace for refurbished products, the system supports environmentally responsible consumption while creating value from discarded materials.
 
 ---
 
