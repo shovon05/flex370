@@ -1,147 +1,103 @@
-# flex370
-# Proposed Project Ideas
-
----
-
-# Idea 1 — MentorGraph  
-### Academic Consultation & Mentorship Management System
-
-## Overview
-MentorGraph is a database-driven platform designed to simplify academic consultations between **students, student tutors (ST), and faculty members**.
-
-The system allows students to discover mentors based on **topic expertise, availability, and previous consultation feedback**, and schedule consultation sessions through a structured booking interface.
-
-By combining consultation scheduling, expertise mapping, and reputation tracking, MentorGraph helps students efficiently find the most suitable academic support.
-
----
-
-## Key Features
-
-**Smart Mentor Discovery**  
-Students can search for tutors or faculty members based on specific subjects or topics.
-
-**Availability-Based Consultation Booking**  
-Students can view mentor availability and schedule consultation sessions without conflicts.
-
-**Topic Expertise Mapping**  
-Tutors and faculty members can define subjects and topics they specialize in.
-
-**Reputation & Review System**  
-Students can provide ratings and feedback after consultation sessions.
-
-**Tutor / Faculty Availability Management**  
-Mentors can manage their consultation schedules and available time slots.
-
-**Consultation History Tracking**  
-Students can review past consultation sessions and feedback.
-
-**Student Performance Feedback**  
-Tutors or faculty members may optionally provide feedback about student understanding.
-
----
-
-## Possible Database Entities
-
-- Students  
-- Student Tutors  
-- Faculty Members  
-- Subjects  
-- Topics  
-- Consultation Sessions  
-- Availability Slots  
-- Reviews  
-- Ratings  
-- Notifications  
-- Student Evaluations  
-
----
-
-# Idea 2 — ReCycleHub  
-### Waste Recycling & Reuse Management Platform
-
-## Overview
-ReCycleHub is a database-driven platform designed to manage the collection, recycling, and reuse of **electrical and plastic waste**.
-
-The system allows users to request waste pickup, track recycling processes, and earn rewards for contributing recyclable materials. The platform also supports selling **refurbished electronic products and recycled plastic products**, encouraging sustainable resource usage.
-
----
-
-## Key Features
-
-**Waste Pickup Request System**  
-Users can submit waste pickup requests with waste details and images.
-
-**Administrative Approval Workflow**  
-Administrators review and approve recycling requests.
-
-**Worker Assignment & Pickup Scheduling**  
-Workers are assigned to approved requests and given pickup schedules.
-
-**Recycling Request Tracking**  
-Users can track the progress of their recycling requests.
-
-**Reward Points System**  
-Users earn reward points when selling recyclable waste.
-
-**Reuse Product Marketplace**  
-The platform supports selling refurbished electronic products and recycled plastic products.
-
----
-
-## Possible Database Entities
-
-- Users  
-- Administrators  
-- Workers  
-- Waste Requests  
-- Pickup Locations  
-- Waste Items  
-- Recycled Products  
-- Orders  
-- Reward Points  
-- Support Messages  
-
----
-
-# Idea 3 — SeismoSafe  
+# SeismoSafe
 ### Earthquake Vulnerable Building Detection & Area-Based Risk Analysis System for Bangladesh
 
-## Overview
+## Project Overview
+
 SeismoSafe is a database-driven system designed to detect earthquake-vulnerable buildings and perform **area-based structural risk analysis across Bangladesh**.
 
-The platform collects building information, structural inspection reports, and geographic data to evaluate the **earthquake vulnerability of buildings and surrounding areas**. Using a risk scoring algorithm, the system categorizes buildings based on structural safety levels and helps authorities prioritize safety inspections and emergency preparedness planning.
+The platform collects building information, structural inspection records, and geographic data to evaluate the **earthquake vulnerability of buildings and surrounding areas**. Using a structured risk scoring algorithm, the system categorizes buildings based on their structural safety and helps authorities identify high-risk areas.
+
+The system aims to support **urban safety planning, disaster preparedness, and structural monitoring** by combining seismic data, building information, and inspection reports into a unified database platform.
 
 ---
 
-## Key Features
+# Key Features
 
-**Multi-Level Role-Based Login System**  
-Separate dashboards for Admin, Structural Engineers, Inspectors, Citizens, and Emergency Responders with role-based access control.
+### Multi-Level Role-Based Login System
+The platform supports separate dashboards for:
+- Admin
+- Structural Engineers
+- Building Inspectors
+- Citizens
+- Emergency Responders
 
-**Structural Weakness Scoring Algorithm**  
-The system calculates a **Building Risk Score** based on construction year, number of floors, building materials, soil type, BNBC compliance, and distance from seismic zones. Buildings are categorized as Safe, Moderate Risk, or High Risk.
-
-**Seismic Zone Classification Integration**  
-The database stores Bangladesh’s earthquake zone classifications and applies risk multipliers based on each building’s location.
-
-**Risk Heatmap & Area Filtering**  
-An interactive map displays weak buildings using color-coded indicators. Users can filter results by city, area, ward, or risk score range.
-
-**Old vs Updated Building Code Comparison**  
-Buildings constructed before major BNBC updates receive higher vulnerability weighting.
-
-**Inspection History & Structural Image Upload**  
-Inspectors can upload structural inspection images such as cracks, column damage, or foundation issues. Multiple inspection records can be stored per building.
-
-**Illegal Floor & Structural Modification Detection**  
-The system compares approved building plans with actual floor counts. Unauthorized extensions automatically increase the building risk score.
-
-**Smart Priority Ranking & Emergency Preparedness Score**  
-The system ranks the most dangerous buildings based on calculated risk scores and evaluates emergency readiness based on fire exits, emergency stairs, and open assembly areas. It also indicates how suitable an area is for safe living.
+Each role has controlled access to building data, inspection reports, and risk analysis information.
 
 ---
 
-## Possible Database Entities
+### Structural Weakness Scoring Algorithm
+The system calculates a **Building Risk Score** based on:
+
+- Construction year  
+- Number of floors  
+- Building materials  
+- Soil type  
+- BNBC compliance  
+- Distance from seismic zones  
+
+Buildings are categorized as:
+
+- Safe  
+- Moderate Risk  
+- High Risk  
+
+---
+
+### Seismic Zone Classification Integration
+The database stores **Bangladesh earthquake zone classifications** and automatically applies risk multipliers depending on the zone where a building is located.
+
+---
+
+### Risk Heatmap & Area Filtering
+The platform visualizes vulnerable buildings through a **risk heatmap**.
+
+Users can filter data based on:
+
+- City
+- Area
+- Ward
+- Risk score range
+
+---
+
+### Old vs Updated Building Code Comparison
+The system compares a building’s construction year with **major Bangladesh National Building Code (BNBC) updates**. Older buildings receive higher vulnerability scores.
+
+---
+
+### Inspection History & Structural Image Upload
+Inspectors can upload structural inspection data including:
+
+- Crack detection
+- Column damage
+- Foundation issues
+- Structural images
+
+Each building maintains **multiple inspection records over time**.
+
+---
+
+### Illegal Floor & Structural Modification Detection
+The system compares **approved building plan data** with the actual building structure.
+
+Unauthorized floor additions or structural modifications automatically increase the building risk score.
+
+---
+
+### Smart Priority Ranking & Emergency Preparedness Score
+The platform automatically ranks **high-risk buildings** that require urgent inspection.
+
+It also evaluates emergency readiness based on:
+
+- Fire exits
+- Emergency staircases
+- Open assembly areas
+
+The system can also estimate **how safe an area is for residential living** based on surrounding building risk levels.
+
+---
+
+# Potential Database Entities
 
 - Buildings  
 - Building Owners  
@@ -157,7 +113,34 @@ The system ranks the most dangerous buildings based on calculated risk scores an
 
 ---
 
+# Planned Repository Structure
+
+```
+SeismoSafe
+│
+├── README.md
+├── docs
+│   ├── ER_Diagram.png
+│   ├── Database_Schema.png
+│
+├── database
+│   ├── schema.sql
+│   ├── seed_data.sql
+│
+├── src
+│   └── application_code
+```
+
+---
+
 # Repository Status
 
-This repository is currently **under development**.  
-Project documentation, ER/EER diagrams, database schema designs, and implementation files will be added progressively as the project progresses.
+This project repository is currently **under development**.
+
+Upcoming updates will include:
+
+- Feature documentation  
+- ER/EER diagrams  
+- Database schema design  
+- SQL implementation  
+- System architecture
