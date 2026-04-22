@@ -1,121 +1,133 @@
 # SeismoSafe
-### Earthquake Vulnerable Building Detection & Area-Based Risk Analysis System for Bangladesh
+
+**Earthquake Vulnerable Building Detection & Area-Based Risk Analysis System for Bangladesh**
+
+SeismoSafe is a database-driven platform for detecting earthquake-vulnerable buildings and analyzing structural risk across different areas of Bangladesh.  
+It collects building data, inspection records, seismic zone information, and structural history to generate risk scores and support safety planning, disaster preparedness, and monitoring.
+
+---
 
 ## Project Overview
 
-SeismoSafe is a database-driven system designed to detect earthquake-vulnerable buildings and perform **area-based structural risk analysis across Bangladesh**.
+SeismoSafe helps users, inspectors, engineers, and administrators manage building-related information in one unified system.  
+The platform evaluates building safety using structural details, inspection reports, seismic zone data, and code-compliance indicators.
 
-The platform collects building information, structural inspection records, and geographic data to evaluate the **earthquake vulnerability of buildings and surrounding areas**. Using a structured risk scoring algorithm, the system categorizes buildings based on their structural safety and helps authorities identify high-risk areas.
-
-The system aims to support **urban safety planning, disaster preparedness, and structural monitoring** by combining seismic data, building information, and inspection reports into a unified database platform.
+The system is designed to:
+- identify vulnerable buildings,
+- classify risk levels,
+- support area-based risk analysis,
+- track inspection history,
+- and improve emergency preparedness.
 
 ---
 
-# Key Features
+## Key Features
 
-### Multi-Level Role-Based Login System
-The platform supports separate dashboards for:
+### Role-Based Login System
+Separate dashboards are available for:
 - Admin
 - Structural Engineers
 - Building Inspectors
-- Citizens
+- Citizens / Residents
+- Building Owners
 - Emergency Responders
 
-Each role has controlled access to building data, inspection reports, and risk analysis information.
+Each role has controlled access to relevant data and functions.
+
+### Building Registration
+Owners can register building details in the system and create a unique record for each property.
+
+### Complaint Management
+Residents and owners can file complaints about building issues, including:
+- photo uploads
+- written descriptions
+- issue tracking
+
+### Building Information Display
+Users can view complete building information, including:
+- specifications
+- ownership details
+- inspection history
+- structural condition
+
+### Structural Weakness Scoring
+The system calculates a building risk score based on:
+- construction year
+- number of floors
+- building materials
+- soil type
+- BNBC compliance
+- seismic zone distance
+
+### Seismic Zone Classification
+Bangladesh seismic zone data is stored in the database and used to apply risk multipliers based on location.
+
+### Risk Heatmap and Area Filtering
+Users can analyze vulnerable buildings through a heatmap and filter results by:
+- city
+- area
+- ward
+- risk score range
+
+### BNBC Comparison
+Older buildings are compared with major Bangladesh National Building Code updates to estimate vulnerability.
+
+### Inspection History and Structural Image Upload
+Inspectors can upload:
+- crack detection reports
+- column damage data
+- foundation issue reports
+- structural images
+
+Each building supports multiple inspection records over time.
+
+### Illegal Floor and Structural Modification Detection
+The system compares approved building plans with the actual structure.  
+Unauthorized modifications increase the risk score.
+
+### Priority Ranking and Emergency Preparedness
+High-risk buildings are ranked for urgent inspection.  
+The system can also evaluate emergency readiness based on:
+- fire exits
+- emergency staircases
+- open assembly areas
+
+### AI Chatbot
+An integrated chatbot provides:
+- instant support
+- frequently asked answers
+- user guidance
+
+### Admin Control Panel
+Administrators can:
+- manage users
+- approve records
+- monitor system activity
+- moderate content
 
 ---
 
-### Structural Weakness Scoring Algorithm
-The system calculates a **Building Risk Score** based on:
+## Database Entities
 
-- Construction year  
-- Number of floors  
-- Building materials  
-- Soil type  
-- BNBC compliance  
-- Distance from seismic zones  
-
-Buildings are categorized as:
-
-- Safe  
-- Moderate Risk  
-- High Risk  
-
----
-
-### Seismic Zone Classification Integration
-The database stores **Bangladesh earthquake zone classifications** and automatically applies risk multipliers depending on the zone where a building is located.
+- Users
+- Owners
+- Inspectors
+- Residents
+- Buildings
+- Seismic Zones
+- Risk Scores
+- Inspection Reports
+- Structural Images
+- Emergency Facilities
+- Building Plans
+- Unauthorized Modifications
+- Complaints
 
 ---
 
-### Risk Heatmap & Area Filtering
-The platform visualizes vulnerable buildings through a **risk heatmap**.
+## Planned Repository Structure
 
-Users can filter data based on:
-
-- City
-- Area
-- Ward
-- Risk score range
-
----
-
-### Old vs Updated Building Code Comparison
-The system compares a building’s construction year with **major Bangladesh National Building Code (BNBC) updates**. Older buildings receive higher vulnerability scores.
-
----
-
-### Inspection History & Structural Image Upload
-Inspectors can upload structural inspection data including:
-
-- Crack detection
-- Column damage
-- Foundation issues
-- Structural images
-
-Each building maintains **multiple inspection records over time**.
-
----
-
-### Illegal Floor & Structural Modification Detection
-The system compares **approved building plan data** with the actual building structure.
-
-Unauthorized floor additions or structural modifications automatically increase the building risk score.
-
----
-
-### Smart Priority Ranking & Emergency Preparedness Score
-The platform automatically ranks **high-risk buildings** that require urgent inspection.
-
-It also evaluates emergency readiness based on:
-
-- Fire exits
-- Emergency staircases
-- Open assembly areas
-
-The system can also estimate **how safe an area is for residential living** based on surrounding building risk levels.
-
----
-
-# Potential Database Entities
-
-- Buildings  
-- Building Owners  
-- Structural Engineers  
-- Inspectors  
-- Seismic Zones  
-- Inspection Reports  
-- Structural Images  
-- Risk Scores  
-- Emergency Facilities  
-- Building Plans  
-- Unauthorized Modifications  
-
----
-
-# Planned Repository Structure
-
-```
+```bash
 SeismoSafe
 │
 ├── README.md
@@ -129,18 +141,3 @@ SeismoSafe
 │
 ├── src
 │   └── application_code
-```
-
----
-
-# Repository Status
-
-This project repository is currently **under development**.
-
-Upcoming updates will include:
-
-- Feature documentation  
-- ER/EER diagrams  
-- Database schema design  
-- SQL implementation  
-- System architecture
