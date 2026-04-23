@@ -47,79 +47,9 @@ An interactive map with shaded overlays that visually highlights seismic risk zo
 ### 7. 🛠️ Admin Control Panel
 A backend management portal for administrators to oversee system operations, manage users, issue approvals, and moderate platform content.
 
----
 
-## 🗂️ Project Structure
-
-```
-SeismoSafe/
-├── frontend/          # Client-side application
-├── backend/           # Server-side logic & APIs
-├── models/            # Database models & schemas
-├── admin/             # Admin control panel
-├── maps/              # Seismic zone mapping assets
-└── docs/              # Documentation & resources
-```
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js / Python (based on your stack)
-- Database (PostgreSQL / MongoDB)
-- GIS / Map API key (e.g., Google Maps, Leaflet)
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/seismosafe.git
-
-# Navigate to the project directory
-cd seismosafe
-
-# Install dependencies
-npm install  # or pip install -r requirements.txt
-
-# Set up environment variables
-cp .env.example .env
-
-# Run the development server
-npm run dev  # or python manage.py runserver
-```
-
----
-
-## 🌍 Context & Motivation
-
-Bangladesh lies in a seismically active region, yet a significant portion of its building stock lacks proper earthquake-resistant design. SeismoSafe aims to bridge the gap between technical seismic data and community-level awareness — enabling smarter decisions for residents, policymakers, and urban planners alike.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please open an issue first to discuss proposed changes, then submit a pull request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add YourFeature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 📬 Contact
-
-For questions or collaboration inquiries, feel free to open an issue or reach out via GitHub Discussions.
-
----
 
 <p align="center">Built with ❤️ for a safer Bangladesh 🇧🇩</p>
