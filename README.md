@@ -1,9 +1,5 @@
 # 🏚️ SeismoSafe — Earthquake Vulnerable Building Detection & Area-Based Risk Analysis System for Bangladesh
 
-![Bangladesh](https://img.shields.io/badge/Region-Bangladesh-green)
-![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
-![License](https://img.shields.io/badge/License-MIT-blue)
-
 > A smart, data-driven platform for identifying seismically vulnerable buildings across Bangladesh, empowering residents, owners, and inspectors with actionable risk insights.
 
 ---
