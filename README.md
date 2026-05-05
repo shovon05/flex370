@@ -20,9 +20,9 @@ SeismoSafe is a web-based system designed to detect earthquake-vulnerable buildi
 | **Residence** | Occupant of a registered building |
 | **Building** | The physical structure registered in the system |
 | **Risk Score** | Computed vulnerability score assigned to a building |
-| **Rental_Request** | Computed vulnerability score assigned to a building |
-| **to_let** | Computed vulnerability score assigned to a building |
-| **payment** | Computed vulnerability score assigned to a building |
+| **Rental_Request** | Who send request for take rent the building rooms |
+| **to_let** | where all the to-let are saved with details like rent, no of rooms|
+| **payment** | all the request payement details|
 ---
 
 ## ✨ Features
