@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+}
+
+.sidebar {
+    width: 170px;
+    height: 100vh;
+    background: #1e1e2f;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #34345a;
+}
+
+.main {
+    margin-left: 240px;
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #ef634b;
+}
+
+form {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #1e1e2f;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #34345a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+th {
+    background: #1e1e2f;
+    color: white;
+}
+
+tr:hover {
+    background: #f2f2f2;
+}
+
+a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Fix assign form size inside table */
+td form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    min-width: 170px;
+}
+
+td form select,
+td form input[type="date"],
+td form button {
+    width: 100%;
+    height: 38px;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.summary-box {
+    margin-top: 15px;
+    padding: 12px;
+    background: #0505d2;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+    width: 250px;
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    .main {
+        margin-left: 200px;
+    }
+}

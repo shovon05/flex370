@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Building Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Building Registration Form</h1>
+
+    <form class="registration-form" action="registration.php" method="POST">
+
+        <label>Building Name (Optional)</label>
+        <input type="text" name="building_name">
+
+        <label>Building Address *</label>
+        <textarea name="address" required></textarea>
+
+        <label>Building Material</label>
+        <select name="material" required>
+            <option value="">Select Material</option>
+            <option>Brick</option>
+            <option>Concrete</option>
+            <option>Steel </option>
+            <option>Mixed</option>
+        </select>
+
+        <label>Total Number of Floors</label>
+        <input type="number" name="floors" min="1" required>
+
+        <label>Construction Year</label>
+        <input type="number" name="year" min="1900" max="2100" required>
+
+        <label>Emergency Facilities</label>
+
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="stair_case"> Stair Case</label>
+            <label><input type="checkbox" name="fire_exit"> Fire Exit</label>
+            <label><input type="checkbox" name="assembly_point"> Assembly Point</label>
+        </div>
+
+        <label>Owner Owns Date</label>
+        <input type="date" name="date" required>
+
+        <button type="submit">Register Building</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

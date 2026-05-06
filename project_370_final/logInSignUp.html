@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeismoSafe/LogInSignUp</title>
+    <link rel="stylesheet" href="logInSignUp.css">
+</head>
+<body>
+
+    <h1 class="page-title">SeismoSafe</h1>
+
+    <div class="container">
+        <div class="form-box">
+
+            <div class="button-box">
+                <button onclick="showLogin()">Login</button>
+                <button onclick="showSignup()">Signup</button>
+            </div>
+
+            <form id="loginForm" class="form active-form" action="login.php" method="POST">
+                <br>
+                <h2 style="color: #1e1e2f;">Login</h2>
+
+                <input type="email" name="email" placeholder="Email" required>
+
+                <input type="password" name="password" placeholder="Password" required>
+
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+
+            
+            <form id="signupForm" class="form" action="signup.php" method="POST">
+                <br>
+                <h2 style="color:#ff6a00;">Signup</h2>
+
+                <input type="text" name="fullname" placeholder="Full Name" required>
+
+                <input type="email" name="email" placeholder="Email" required>
+
+                <input type="password" name="password" placeholder="Password" required>
+
+                <select name="role" required>
+                    <option value="">Select Role</option>
+                    <!--<option value="Admin">Admin</option>-->
+                    <!--<option value="Inspector">Inspector</option>-->
+                    <option value="Owner">Owner</option>
+                    <option value="Tenant">Tenant</option>
+                </select>
+
+                <button type="submit" class="submit-btn">Signup</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="logInSignUp.js"></script>
+
+</body>
+</html>

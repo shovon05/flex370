@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenant Complaint</title>
+    <link rel="stylesheet" href="complain.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Tenant Complaint Form</h1>
+
+        <form class="complaint-form" action="complain.php" method="post" enctype="multipart/form-data">
+
+            <label>Upload Photos</label>
+
+            <div class="upload-box">
+                <input type="file" id="fileUpload" name="photo[]" accept="image/*" multiple required>
+
+                <label for="fileUpload" class="upload-btn">
+                    Choose Images
+                </label>
+
+                <p id="uploadStatus" style="color:white; margin-top:10px; font-size:14px;"></p>
+            </div>
+
+        
+            <label>Complaint Description</label>
+            <textarea name="description" placeholder="Write your complaint here..." required></textarea>
+
+            <button type="submit">Submit Complaint</button>
+
+        </form>
+
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('fileUpload');
+        const uploadStatus = document.getElementById('uploadStatus');
+
+        fileInput.addEventListener('change', function() {
+
+            if (this.files.length > 0) {
+                uploadStatus.innerHTML = "✅ Uploaded";
+            } else {
+                uploadStatus.innerHTML = "";
+            }
+
+        });
+    </script>
+
+</body>
+</html>
